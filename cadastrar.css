@@ -1,0 +1,226 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+
+
+
+.login {
+    width: 50%;
+    height: 100vh;
+    background-color: #f9f9f9;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+
+
+
+
+.login-conteudo {
+    width: 100%;
+    max-width: 420px;
+    margin: auto 0;
+}
+
+
+
+
+.logo {
+    width: 110px;
+    height: auto;
+    display: block;
+}
+
+
+
+
+h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #111111;
+    margin-bottom: 25px;
+}
+
+
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+input {
+    width: 100%;
+    height: 52px;
+
+    padding: 0 16px;
+
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    outline: none;
+
+    font-size: 14px;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+input::placeholder {
+    color: #aaaaaa;
+    font-size: 13px;
+}
+
+input:focus {
+    border-color: #f3a638;
+}
+
+
+
+
+button {
+    width: 100%;
+    height: 52px;
+    margin-top: 8px;
+
+    border: none;
+    border-radius: 4px;
+
+    background-color: #fcae3b;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #e59b2d;
+}
+
+
+
+
+.cadastro-link {
+    width: 100%;
+
+    margin-top: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+}
+
+.cadastro-link span {
+    flex: 1;
+    height: 2px;
+    background-color: #fcae3b;
+}
+
+.cadastro-link a {
+    color: #333333;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+
+
+
+.imagem {
+    width: 50%;
+    height: 100vh;
+
+    background-color: #000000;
+
+    overflow: hidden;
+}
+
+
+
+
+.imagem img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    display: block;
+
+    /* MANTÉM A IMAGEM TOTALMENTE RETANGULAR */
+    border-radius: 0;
+}
+
+
+@media (max-width: 900px) {
+
+    .login {
+        padding: 30px;
+    }
+
+    .login-conteudo {
+        max-width: 100%;
+    }
+
+    .logo {
+        width: 90px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    input, button {
+        height: 48px;
+    }
+}
+
+
+
+@media (max-width: 700px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .login {
+        width: 100%;
+        height: 100vh;
+        padding: 24px;
+    }
+
+    .imagem {
+        display: none;
+    }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdos - URBAN</title>
+    <link rel="stylesheet" href="carrosel.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <nav class="menu-navegacao">
+            <a href="conteudo.html">
+                <img src="./images/logo.png" alt="Logo URBAN" class="imagem-logo">
+            </a>
+            <div class="links-menu">
+                <a href="conteudo.html" class="ativo">Conteúdos</a>
+                <a href="#">Jogo</a>
+                <a href="sobre.html">Sobre nós</a>
+                <a href="index.html">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="secao-carrossel">
+        <div class="cabecalho-principal">
+            <h1>O futuro das cidades começa aqui.</h1>
+            <p>Explore conteúdos sobre urbanização, mobilidade urbana, sustentabilidade e tecnologia nas cidades modernas.</p>
+        </div>
+
+        <div class="container-carrossel">
+            <button class="botao-carrossel anterior" id="btnPrev" aria-label="Anterior">&#10094;</button>
+
+            <div class="trilho-carrossel" id="track">
+                
+                <a href="c_u_s.html" class="cartao-item">
+                    <div class="caixa-imagem">
+                        <img src="./images/cidade7.jpg" alt="Crescimento Urbano">
+                    </div>
+                    <h3>Crescimento Urbano e Sociedade</h3>
+                </a>
+
+                <a href="d_urbano.html" class="cartao-item">
+                    <div class="caixa-imagem">
+                        <img src="./images/cidade8.jpg" alt="Desenvolvimento Urbano">
+                    </div>
+                    <h3>Desenvolvimento Urbano</h3>
+                </a>
+
+                <a href="u_c_c.html" class="cartao-item">
+                    <div class="caixa-imagem">
+                        <img src="./images/cidade9.jpg" alt="Urbanização">
+                    </div>
+                    <h3>Urbanização e o Crescimento das Cidades</h3>
+                </a>
+
+                <a href="sustentabilidade.html" class="cartao-item">
+                    <div class="caixa-imagem">
+                        <img src="./images/cidade10.jpg" alt="Sustentabilidade">
+                    </div>
+                    <h3>Sustentabilidade Urbana</h3>
+                </a>
+
+                <a href="urbano.html" class="cartao-item">
+                    <div class="caixa-imagem">
+                        <img src="./images/cidade11.jpg" alt="Mobilidade">
+                    </div>
+                    <h3>Urbanização Moderna</h3>
+                </a>
+
+            </div>
+
+            <button class="botao-carrossel proximo" id="btnNext" aria-label="Próximo">&#10095;</button>
+        </div>
+    </main>
+
+    <script src="carrosel.js"></script>
+</body>
+</html>

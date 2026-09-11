@@ -1,0 +1,366 @@
+/* RESET E ESTILOS BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, body, h1, h2, h3, h4, h5, h6, p, span, a, button, div, input, label {
+    font-family: 'Noto Serif Telugu', 'Noto Serif', Georgia, 'Times New Roman', serif !important;
+}
+
+body {
+    width: 100%;
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+}
+
+p {
+    font-family: 'Noto Serif Telugu', 'Noto Serif', Georgia, serif !important;
+    color: #555555;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* NAVEGAÇÃO */
+.cabecalho-principal {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.navegacao-menu {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imagem-logo {
+    width: 110px;
+    height: auto;
+}
+
+.links-navegacao {
+    display: flex;
+    gap: 25px;
+}
+
+.links-navegacao a {
+    color: #FAAD3A !important;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.links-navegacao a.link-ativo {
+    color: #D9822B !important;
+}
+
+/* BANNERS E LAYOUT GENERALIZADO */
+.container-principal {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.secao-banner-titulo {
+    width: 100%;
+    max-width: 850px;
+    margin: 10px auto 20px auto;
+    padding: 0 20px;
+}
+
+.caixa-titulo-laranja {
+    background-color: #FAAD3A;
+    padding: 18px 0;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.caixa-titulo-laranja h1 {
+    color: #ffffff !important;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.secao-icones-topicos {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto 20px auto;
+    padding: 0 20px;
+}
+
+.container-centralizado {
+    display: flex;
+    justify-content: center;
+}
+
+.imagem-icones-grupo {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+}
+
+/* SEÇÃO DE FUNDO BEGE */
+.secao-fundo-bege {
+    background-color: #FCEFD5;
+    padding: 35px 0;
+    width: 100%;
+}
+
+.titulo-bege-destaque {
+    color: #FAAD3A !important;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.texto-bege-destaque {
+    color: #FAAD3A !important;
+    font-size: 13px !important;
+    line-height: 1.7 !important;
+    text-align: justify;
+}
+
+.texto-destaque-bege {
+    color: #FAAD3A !important;
+    font-size: 13px !important;
+    line-height: 1.7 !important;
+    text-align: justify;
+}
+
+.texto-bege-detalhes {
+    color: #FAAD3A !important;
+    font-size: 13px !important;
+    line-height: 1.7 !important;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+/* COLUNAS E ESTRUTURA FLEX */
+.linha-flex-conteudo {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+.alinhamento-centro {
+    align-items: center;
+}
+
+.coluna-texto {
+    flex: 1;
+}
+
+.coluna-texto p {
+    color: #555555;
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+.coluna-imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.imagem-arredondada {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    display: block;
+}
+
+/* TÍTULOS DE SEÇÃO DA ÁREA BRANCA */
+.titulo-secao {
+    color: #FAAD3A !important;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.espacamento-topo {
+    margin-top: 30px;
+}
+
+/* SEÇÃO DE VÍDEOS */
+.secao-videoaulas {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.cabecalho-central-videos {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cabecalho-central-videos h2 {
+    color: #222222 !important;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.cabecalho-central-videos p {
+    color: #666666;
+    font-size: 12px;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.lista-videos-coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cartao-video-item {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.quadro-miniatura {
+    flex-shrink: 0;
+    width: 180px;
+    height: 110px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #e0e0e0;
+}
+
+.quadro-miniatura img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.descricao-video {
+    flex: 1;
+}
+
+.descricao-video h3 {
+    color: #222222;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.descricao-video p {
+    color: #666666;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* BOTÃO TOPO */
+.botao-topo {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #FAAD3A;
+    color: #ffffff !important;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    z-index: 999;
+}
+
+.botao-topo:hover {
+    background-color: #D9822B;
+    transform: translateY(-3px);
+}
+
+/* RODAPÉ */
+.rodape-site {
+    width: 100%;
+    background-color: #FAAD3A;
+    padding: 35px 20px;
+    margin-top: 50px;
+}
+
+.conteudo-rodape {
+    max-width: 850px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+}
+
+.coluna-marca h2 {
+    color: #ffffff !important;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.coluna-links {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.coluna-links a {
+    color: #ffffff !important;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.coluna-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: right;
+    font-size: 13px;
+}
+
+.coluna-contato p {
+    color: #ffffff !important;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .linha-flex-conteudo {
+        flex-direction: column;
+    }
+
+    .cartao-video-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .quadro-miniatura {
+        width: 100%;
+        height: 160px;
+    }
+
+    .conteudo-rodape {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .coluna-contato {
+        text-align: center;
+    }
+}
