@@ -18,7 +18,7 @@
         { emojis: ["🚲","🚶"], answer: "Mobilidade Ativa" }
       ]
     },
-    {c
+    {
       title: "Sustentabilidade",
       pairs: [
         { emojis: ["♻️","🗑️"], answer: "Gestão de Resíduos" },
